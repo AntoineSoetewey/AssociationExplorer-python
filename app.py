@@ -53,12 +53,12 @@ def correlation_ratio(categories, measurements):
 
 
 # Load the CSV file
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data/data.csv")
 
 # Optional variable descriptions
 descriptions = {}
 try:
-    desc_df = pd.read_csv("description.csv")
+    desc_df = pd.read_csv("data/description.csv")
     if {"Variable", "Description"}.issubset(desc_df.columns):
         descriptions = desc_df.set_index("Variable")["Description"].to_dict()
 except FileNotFoundError:
