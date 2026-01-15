@@ -78,7 +78,7 @@ categorical_cols = [c for c in df_filtered.columns if c not in numeric_cols]
 
 threshold = st.slider(
     "Association threshold", 
-    0.0, 1.0, (0.1, 1.0), 0.01,
+    0.0, 1.0, (0.5, 1.0), 0.01,
     help="Threshold applies to r² (numeric–numeric), η² (numeric–categorical), and Cramér's V (categorical–categorical)."
 )
 threshold_min, threshold_max = threshold
