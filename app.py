@@ -401,6 +401,11 @@ with tab3:
        - View scatter plots with regression lines for numeric pairs
        - View contingency tables and heatmaps for categorical pairs
        - View mean plots for numeric-categorical pairs
+                
+    ### Interpreting the Network Visualization
+
+    - **Edge thickness** is proportional to the **association strength**; thicker edges indicate stronger associations.
+    - **Distance between nodes** is determined by a force-directed layout algorithm. Variables connected by stronger associations tend to appear closer, but distances should be interpreted **qualitatively**, not quantitatively.
     
     ### Tips
     

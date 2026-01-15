@@ -5,7 +5,7 @@ It combines an **interactive association network** (PyVis) with **pairwise visua
 
 ## Features
 
-### 1) Association Network (interactive)
+### 1) Association Network
 - Builds a network where:
   - **nodes** are variables
   - **edges** are associations that pass the threshold
@@ -14,6 +14,9 @@ It combines an **interactive association network** (PyVis) with **pairwise visua
   - **Blue / Red**: numeric–numeric (Pearson *r*, sign indicates direction)
   - **Orange**: numeric–categorical (Eta *η*)
   - **Gray**: categorical–categorical (Cramér’s *V*)
+- Interpreting the Network Visualization:
+  - **Edge thickness** is proportional to the **association strength**; thicker edges indicate stronger associations
+  - **Distance between nodes** is determined by a force-directed layout algorithm. Variables connected by stronger associations tend to appear closer, but distances should be interpreted **qualitatively**, not quantitatively
 
 ### 2) Pair Plots
 For every association kept in the network, the app displays the corresponding “pair plot”:
