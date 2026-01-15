@@ -411,4 +411,4 @@ with tab3:
     """)
     
     st.markdown("---")
-    st.markdown("*Association Explorer - Python Edition*")
+    st.markdown("*AssociationExplorer. [Code](https://github.com/AntoineSoetewey/AssociationExplorer-python)*")
