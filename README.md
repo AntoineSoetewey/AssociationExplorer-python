@@ -44,6 +44,22 @@ The app computes pairwise associations depending on variable types and applies t
 > `threshold_min <= metric_used_for_threshold <= threshold_max`  
 > are displayed.
 
+## Quick start
+
+```bash
+# 1) Create and activate a virtual env (optional but recommended)
+python -m venv .venv
+source .venv/bin/activate
+
+# 2) Install dependencies
+pip install -r requirements.txt
+
+# 3) Run the Streamlit app
+streamlit run app.py
+```
+
+If Streamlit complains about `ModuleNotFoundError: No module named 'pyvis'`, it means dependencies were not installed in the active environment. Activate the virtual environment (step 1) and rerun the install command (step 2).
+
 ## License
 
 MIT License
